@@ -1,0 +1,272 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3b71fe;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.rowsearchhotels{
+ @apply font-normal not-italic text-gray_50 w-[auto]; 
+}
+.rowarrowleft{
+ @apply font-normal mb-[1px] lg:ml-[10px] xl:ml-[13px] 2xl:ml-[15px] 3xl:ml-[17px] not-italic text-white_A700 w-[auto]; 
+}
+.DEL{
+ @apply font-semibold mt-[2px] text-gray_50 w-[auto]; 
+}
+.price{
+ @apply font-semibold mb-[1px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] text-gray_50 w-[auto]; 
+}
+.Checkin{
+ @apply font-poppins font-semibold text-bluegray_400 w-[auto]; 
+}
+.time{
+ @apply font-inter mt-[2px] not-italic text-gray_900 w-[auto]; 
+}
+.EarnPoints{
+ @apply font-normal mt-[1px] not-italic text-gray_800 w-[auto]; 
+}
+.rowstar{
+ @apply font-normal not-italic text-gray_800 w-[auto]; 
+}
+.star{
+ @apply 2xl:h-[10px] 3xl:h-[12px] lg:h-[8px] xl:h-[9px] w-[24%]; 
+}
+.imageTwo_One{
+ @apply xl:h-[116px] 2xl:h-[130px] 3xl:h-[156px] lg:h-[93px] lg:ml-[12px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] rounded-radius8 w-[13%]; 
+}
+.columnhoteldescripti_one{
+ @apply font-normal xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] not-italic text-black_900 w-[auto]; 
+}
+.columnamentities_one{
+ @apply font-normal 2xl:ml-[10px] 3xl:ml-[11px] lg:ml-[7px] xl:ml-[8px] not-italic text-black_900 w-[auto]; 
+}
+.columnmostpopularbu{
+ @apply font-normal not-italic text-black_900 w-[auto]; 
+}
+.rowgroup466{
+ @apply font-normal 2xl:ml-[11px] 3xl:ml-[13px] lg:ml-[7px] xl:ml-[9px] not-italic text-gray_901 w-[auto]; 
+}
+.Group466{
+ @apply lg:h-[13px] xl:h-[17px] 2xl:h-[18px] 3xl:h-[22px] w-[15%]; 
+}
+.rowsettings{
+ @apply font-normal 2xl:ml-[11px] 3xl:ml-[13px] lg:ml-[7px] xl:ml-[9px] mt-[2px] not-italic text-gray_901 w-[auto]; 
+}
+.settings{
+ @apply lg:h-[13px] xl:h-[16px] 2xl:h-[17px] 3xl:h-[21px] mb-[3px] w-[8%]; 
+}
+.rowgroup462{
+ @apply font-normal 2xl:ml-[11px] 3xl:ml-[13px] lg:ml-[7px] xl:ml-[9px] my-[1px] not-italic text-gray_901 w-[auto]; 
+}
+.rowsignal{
+ @apply font-normal not-italic text-gray_901 w-[auto]; 
+}
+.price_Three{
+ @apply font-bold font-inter text-bluegray_400 uppercase w-[auto]; 
+}
+.test_02Dec2022{
+ @apply font-poppins lg:mt-[3px] xl:mt-[4px] 3xl:mt-[5px] 2xl:mt-[5px] text-gray_800 w-[auto]; 
+}
+.columnexecutivesuite{
+ @apply font-normal lg:leading-[22px] xl:leading-[28px] 2xl:leading-[32px] 3xl:leading-[38px] not-italic text-blue_A400 w-[90%]; 
+}
+.rowuser_two{
+ @apply font-medium xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] mt-[2px] text-gray_900 w-[auto]; 
+}
+.user_Two{
+ @apply lg:h-[10px] xl:h-[13px] 2xl:h-[14px] 3xl:h-[17px] my-[1px] w-[19%]; 
+}
+.rowfolder{
+ @apply font-medium xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[2px] text-gray_900 w-[auto]; 
+}
+.folder{
+ @apply lg:h-[10px] xl:h-[12px] 2xl:h-[13px] 3xl:h-[16px] mt-[1px] w-[14%]; 
+}
+.rowvideocamera{
+ @apply font-medium xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[1px] text-gray_900 w-[auto]; 
+}
+.listgroup629{
+ @apply justify-start lg:my-[43px] xl:my-[54px] 2xl:my-[61px] 3xl:my-[73px] w-[100%]; 
+}
+.rowgroup629{
+ @apply 2xl:ml-[10px] 3xl:ml-[11px] lg:ml-[7px] xl:ml-[8px] mt-[1px] text-gray_700 w-[auto]; 
+}
+.rowcheckmark{
+ @apply 2xl:ml-[10px] 3xl:ml-[11px] lg:ml-[7px] xl:ml-[8px] text-gray_700 w-[auto]; 
+}
+.PernightPer{
+ @apply font-inter font-normal lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] not-italic text-bluegray_400 w-[auto]; 
+}
+.price_Seven{
+ @apply font-poppins lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] not-italic text-gray_901 w-[auto]; 
+}
+.columnwhatsnearby{
+ @apply font-normal lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] not-italic text-black_900 w-[auto]; 
+}
+.rowmiramarbeach{
+ @apply font-medium lg:ml-[102px] xl:ml-[128px] 2xl:ml-[144px] 3xl:ml-[172px] text-gray_800 w-[auto]; 
+}
+.rowdestinroyalec{
+ @apply font-medium 3xl:ml-[116px] lg:ml-[68px] xl:ml-[86px] 2xl:ml-[97px] mt-[1px] text-gray_800 w-[auto]; 
+}
+.CasinoRoyale{
+ @apply font-normal not-italic text-blue_A400 w-[auto]; 
+}
+.Language_Fourteen{
+ @apply font-normal lg:mt-[16px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] not-italic text-gray_800 w-[auto]; 
+}
+.Earlycheckin{
+ @apply font-normal lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[29px] not-italic text-gray_800 w-[auto]; 
+}
+.columnsimiliarhotels{
+ @apply lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-gray_902 tracking-ls1 w-[auto]; 
+}
+.listrecommended{
+ @apply bg-gray_51 items-center justify-start 2xl:pb-[11px] 3xl:pb-[13px] lg:pb-[7px] xl:pb-[9px] rounded-radius8 w-[100%]; 
+}
+.HyattCentricC_One{
+ @apply font-inter font-normal not-italic text-gray_900 w-[auto]; 
+}
+.Guindy{
+ @apply font-poppins font-semibold 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] text-bluegray_400 w-[auto]; 
+}
+.FreeCancellati{
+ @apply font-bold font-inter lg:mt-[3px] xl:mt-[4px] 3xl:mt-[5px] 2xl:mt-[5px] text-bluegray_400 uppercase w-[auto]; 
+}
+.columnfourhundredfifteen_one{
+ @apply font-normal ml-[1px] lg:mt-[3px] xl:mt-[4px] 3xl:mt-[5px] 2xl:mt-[5px] not-italic text-bluegray_400 w-[auto]; 
+}
+.rowfourhundredfifteen_one{
+ @apply font-medium ml-[3px] text-black_900 w-[auto]; 
+}
+.imageThree_One{
+ @apply xl:h-[10px] 2xl:h-[11px] 3xl:h-[14px] lg:h-[8px] w-[32%]; 
+}
+.columnoldprice{
+ @apply font-medium line-through text-bluegray_400 w-[auto]; 
+}
+.price_Fourteen{
+ @apply font-inter font-normal lg:ml-[4px] xl:ml-[6px] 2xl:ml-[7px] 3xl:ml-[8px] not-italic text-gray_900 w-[auto]; 
+}
+.PernightPer_Four{
+ @apply font-poppins mt-[1px] not-italic text-bluegray_400 w-[auto]; 
+}
+.price_One1{
+ @apply font-poppins ml-[4px] mt-[3px] not-italic text-gray_901 w-[auto]; 
+}
+.star_Five{
+ @apply 2xl:h-[10px] 3xl:h-[12px] lg:h-[8px] xl:h-[9px] w-[28%]; 
+}
+.rowgroup6291{
+ @apply 3xl:ml-[10px] lg:ml-[6px] xl:ml-[8px] 2xl:ml-[9px] my-[1px] text-gray_900 w-[auto]; 
+}
+.rowcheckmark1{
+ @apply mb-[1px] 3xl:ml-[10px] lg:ml-[6px] xl:ml-[8px] 2xl:ml-[9px] text-gray_903 w-[auto]; 
+}
+.rowcheckmark_one{
+ @apply lg:leading-[10px] xl:leading-[13px] 2xl:leading-[15px] 3xl:leading-[18px] 3xl:ml-[10px] lg:ml-[6px] xl:ml-[8px] 2xl:ml-[9px] text-gray_903 w-[82%]; 
+}
+.rowcancellationpo{
+ @apply font-medium xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-blue_A400 underline w-[auto]; 
+}
+.Covidpolicies{
+ @apply font-medium lg:ml-[17px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] lg:text-[9px] text-blue_A400 underline w-[auto]; 
+}
+.rowgroup629_one{
+ @apply 3xl:ml-[10px] lg:ml-[6px] xl:ml-[8px] 2xl:ml-[9px] mt-[1px] text-gray_900 w-[auto]; 
+}
+.PernightPer2{
+ @apply font-inter 2xl:mt-[10px] 3xl:mt-[11px] lg:mt-[7px] xl:mt-[8px] not-italic text-bluegray_400 w-[auto]; 
+}
+.price_Two1{
+ @apply font-poppins lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] not-italic text-gray_901 w-[auto]; 
+}
+.EarnPoints1{
+ @apply font-normal my-[1px] not-italic text-gray_800 w-[auto]; 
+}
+.star3{
+ @apply xl:h-[11px] 2xl:h-[12px] 3xl:h-[15px] lg:h-[9px] mt-[2px] w-[24%]; 
+}
+.Earning1086Po{
+ @apply font-poppins font-semibold text-white_A700 w-[auto]; 
+}
+.rowuser_one{
+ @apply font-semibold mt-[1px] text-gray_900 w-[auto]; 
+}
+.price_Eight{
+ @apply font-normal not-italic text-bluegray_400 w-[auto]; 
+}
+.iconsBadgeDis{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[24px] 3xl:h-[29px] w-[7%]; 
+}
+.rowusethiscoupon{
+ @apply font-poppins font-semibold lg:leading-[11px] xl:leading-[14px] 2xl:leading-[16px] 3xl:leading-[19px] text-gray_800 w-[71%]; 
+}
+.columnflights_one{
+ @apply font-inter font-medium text-bluegray_400 w-[auto]; 
+}
+.FlightsHotel_One{
+ @apply font-inter font-medium lg:mt-[22px] xl:mt-[28px] 2xl:mt-[32px] 3xl:mt-[38px] text-bluegray_400 w-[auto]; 
+}
